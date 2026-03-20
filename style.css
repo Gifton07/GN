@@ -1600,6 +1600,11 @@
       }
 
       @media (max-width: 900px) {
+        .hero {
+          min-height: auto;
+          padding: 110px 6vw 60px;
+        }
+
         .nav-links {
           display: none;
         }
@@ -1638,6 +1643,10 @@
       }
 
       @media (max-width: 600px) {
+        .hero {
+          padding: 100px 6vw 48px;
+        }
+
         .hero-inner {
           gap: 22px;
         }
