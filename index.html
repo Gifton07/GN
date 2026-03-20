@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gifton Shibu | Data Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div id="loading-wrap">
+        <div id="loading-mark">
+          GN
+        </div>
+        <div id="loading-bar" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+
+    <header>
+      <nav id="navbar">
+        <a class="logo" href="#hero" aria-label="Gifton Shibu home">
+          <span class="gn">GN</span>
+        </a>
+
+        <div class="nav-links" aria-label="Primary navigation">
+          <a class="nav-link" href="#about" data-section="about">About</a>
+          <a class="nav-link" href="#skills" data-section="skills">Skills</a>
+          <a class="nav-link" href="#projects" data-section="projects">Projects</a>
+          <a class="nav-link" href="#leadership" data-section="leadership">Leadership</a>
+          <a class="nav-link" href="#certifications" data-section="certifications">Certifications</a>
+          <a class="nav-link" href="#contact" data-section="contact">Contact</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <span class="hamburger-lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <a class="nav-cta" href="mailto:giftonshibu07@gmail.com">Get in Touch</a>
+
+        <div class="mobile-menu" id="mobile-menu" hidden>
+          <a href="#about" data-mobile-section="about">About</a>
+          <a href="#skills" data-mobile-section="skills">Skills</a>
+          <a href="#projects" data-mobile-section="projects">Projects</a>
+          <a href="#leadership" data-mobile-section="leadership">Leadership</a>
+          <a href="#certifications" data-mobile-section="certifications">Certifications</a>
+          <a href="#contact" data-mobile-section="contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero" aria-label="Intro">
+        <div class="hero-blobs" aria-hidden="true">
+          <div class="blob-wrap" data-parallax-factor="0.25">
+            <div class="blob blob1"></div>
+            <div class="blob blob2"></div>
+            <div class="blob blob3"></div>
+            <div class="blob blob4"></div>
+            <div class="blob blob5"></div>
+            <div class="blob blob6"></div>
+          </div>
+        </div>
+
+        <div class="hero-inner">
+          <div class="hero-left">
+            <div class="hero-left-top">
+              <div class="hero-badge" data-anim-delay="200">
+                <span class="dot" aria-hidden="true"></span>
+                <span>Available for Opportunities</span>
+              </div>
+
+              <h1 class="hero-title" aria-label="Gifton Shibu">
+                <span class="line" style="color: var(--text);" data-anim="fadeUp" data-anim-delay="400">
+                  Gifton
+                </span>
+                <span class="line gradient-text" data-anim-delay="600">Shibu</span>
+              </h1>
+            </div>
+
+            <div class="hero-left-bottom">
+              <div class="typing-line typing-anim" id="typing-anim">
+                <span id="typed-text" aria-live="polite"></span>
+                <span class="typing-cursor" aria-hidden="true">|</span>
+              </div>
+
+              <p class="hero-subtext" id="hero-subtext" aria-label="Tagline"></p>
+
+              <div class="btn-row" id="hero-buttons">
+                <a class="btn btn-primary" data-anim-delay="1300" href="#projects">
+                  View Projects &rarr;
+                </a>
+                <a
+                  class="btn btn-outline"
+                  data-anim-delay="1300"
+                  href="https://www.linkedin.com/in/gifton07"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.046c.477-.9 1.637-1.852 3.37-1.852 3.602 0 4.266 2.371 4.266 5.455v6.288ZM5.337 7.433c-1.144 0-2.063-.926-2.063-2.063 0-1.137.92-2.063 2.063-2.063 1.143 0 2.064.926 2.064 2.063 0 1.137-.921 2.063-2.064 2.063ZM6.77 20.452H3.902V9H6.77v11.452Z"
+                    />
+                  </svg>
+                  <span>LinkedIn &rarr;</span>
+                </a>
+                <a
+                  class="btn btn-outline"
+                  data-anim-delay="1300"
+                  href="https://github.com/Gifton07"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.18 6.84 9.52.5.09.68-.22.68-.48 0-.24-.01-.86-.01-1.64-2.77.6-3.35-1.35-3.35-1.35-.45-1.14-1.08-1.44-1.08-1.44-.88-.6.07-.59.07-.59 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.33 1.09 2.9.83.09-.65.35-1.09.63-1.34-2.21-.25-4.54-1.11-4.54-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.33 4.7-4.55 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10Z"
+                    />
+                  </svg>
+                  <span>GitHub &rarr;</span>
+                </a>
+              </div>
+
+              <div class="hero-tags" id="hero-tags">
+                <span class="tag-chip" data-anim-delay="1500">Excel</span>
+                <span class="tag-chip" data-anim-delay="1540">SQL</span>
+                <span class="tag-chip" data-anim-delay="1580">Python</span>
+                <span class="tag-chip" data-anim-delay="1620">Power BI</span>
+                <span class="tag-chip" data-anim-delay="1660">Data Visualization</span>
+                <span class="tag-chip" data-anim-delay="1700">Dashboard Development</span>
+                <span class="tag-chip" data-anim-delay="1740">EDA</span>
+                <span class="tag-chip" data-anim-delay="1780">Pandas</span>
+                <span class="tag-chip" data-anim-delay="1820">NumPy</span>
+                <span class="tag-chip" data-anim-delay="1860">Matplotlib</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-photo-parallax" id="hero-photo-parallax">
+              <div class="hero-photo-anim" id="hero-photo-anim">
+                <img class="main-photo" src="gifton.jpeg" alt="Gifton Shibu" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-label reveal">WHO I AM</div>
+        <h2 class="section-heading reveal">About Me</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="reveal">
+              I'm an aspiring <span class="hl">Data Analyst</span> with a genuine passion for working with data and
+              turning it into actionable insights. As a fresher, I've been building skills in <span class="hl">Excel</span>,
+              <span class="hl">SQL</span>, <span class="hl">Python</span>, and <span class="hl">Power BI</span> through
+              academic learning, self-practice, and real project work.
+            </p>
+            <p class="reveal">
+              I'm particularly interested in data cleaning, exploratory data analysis, dashboard development, and
+              reporting. Beyond technical skills, I've developed leadership and management experience through active
+              involvement in student communities and organizational roles.
+            </p>
+            <p class="reveal">
+              I'm currently looking for opportunities to begin my professional journey in data analytics — to contribute
+              meaningfully, grow continuously, and deliver value through <span class="hl">data-driven thinking</span>.
+            </p>
+          </div>
+
+          <div>
+            <div class="stats-grid">
+              <div class="stat-card reveal">
+                <div class="counter-value counter" data-from="0" data-to="4" data-duration="1200" data-suffix="+">0</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div class="stat-card reveal">
+                <div class="counter-value counter" data-from="0" data-to="4" data-duration="1200" data-suffix="+">0</div>
+                <div class="stat-label">Tools Mastered</div>
+              </div>
+              <div class="stat-card reveal">
+                <div class="counter-value counter" data-from="0" data-to="4" data-duration="1200" data-suffix="+">0</div>
+                <div class="stat-label">Leadership Roles</div>
+              </div>
+              <div class="stat-card reveal">
+                <div class="counter-value counter" data-from="2020" data-to="2026" data-duration="1000" data-suffix="">2020</div>
+                <div class="stat-label">B.Tech Graduate</div>
+              </div>
+            </div>
+
+            <div class="education-card reveal">
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <div class="edu-text">
+                <div class="edu-line1">B.Tech — Computer Science &amp; Engineering</div>
+                <div class="edu-line2">Sree Narayana Gurukulam College of Engineering</div>
+                <div class="edu-line3">KTU University · Class of 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-label reveal">WHAT I WORK WITH</div>
+        <h2 class="section-heading reveal">Technical Skills</h2>
+        <div class="skills-intro reveal">A practical toolkit built through projects, coursework, and continuous self-learning.</div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal" style="transition-delay: 0s;">
+            <div class="card-header">
+              <span class="card-dot" style="background: var(--accent2);"></span>
+              <div class="card-title">Tools &amp; Technologies</div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill" style="background: rgba(108,99,255,0.09); border-color: rgba(108,99,255,0.22); color: var(--accent2);">Microsoft Excel</span>
+              <span class="skill-pill" style="background: rgba(108,99,255,0.09); border-color: rgba(108,99,255,0.22); color: var(--accent2);">SQL</span>
+              <span class="skill-pill" style="background: rgba(108,99,255,0.09); border-color: rgba(108,99,255,0.22); color: var(--accent2);">Python</span>
+              <span class="skill-pill" style="background: rgba(108,99,255,0.09); border-color: rgba(108,99,255,0.22); color: var(--accent2);">Power BI</span>
+              <span class="skill-pill" style="background: rgba(108,99,255,0.09); border-color: rgba(108,99,255,0.22); color: var(--accent2);">Jupyter Notebook</span>
+              <span class="skill-pill" style="background: rgba(108,99,255,0.09); border-color: rgba(108,99,255,0.22); color: var(--accent2);">Google Sheets</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" style="transition-delay: 0.1s;">
+            <div class="card-header">
+              <span class="card-dot" style="background: var(--accent3);"></span>
+              <div class="card-title">Python Libraries</div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill" style="background: rgba(56,189,248,0.09); border-color: rgba(56,189,248,0.22); color: #67d9f8;">Pandas</span>
+              <span class="skill-pill" style="background: rgba(56,189,248,0.09); border-color: rgba(56,189,248,0.22); color: #67d9f8;">NumPy</span>
+              <span class="skill-pill" style="background: rgba(56,189,248,0.09); border-color: rgba(56,189,248,0.22); color: #67d9f8;">Matplotlib</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" style="transition-delay: 0.2s;">
+            <div class="card-header">
+              <span class="card-dot" style="background: var(--green);"></span>
+              <div class="card-title">Data Analysis</div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill" style="background: rgba(52,211,153,0.09); border-color: rgba(52,211,153,0.22); color: var(--green);">Data Cleaning</span>
+              <span class="skill-pill" style="background: rgba(52,211,153,0.09); border-color: rgba(52,211,153,0.22); color: var(--green);">Exploratory Data Analysis</span>
+              <span class="skill-pill" style="background: rgba(52,211,153,0.09); border-color: rgba(52,211,153,0.22); color: var(--green);">Data Interpretation</span>
+              <span class="skill-pill" style="background: rgba(52,211,153,0.09); border-color: rgba(52,211,153,0.22); color: var(--green);">Reporting</span>
+              <span class="skill-pill" style="background: rgba(52,211,153,0.09); border-color: rgba(52,211,153,0.22); color: var(--green);">Business Insights</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" style="transition-delay: 0.3s;">
+            <div class="card-header">
+              <span class="card-dot" style="background: var(--gold);"></span>
+              <div class="card-title">Visualization</div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill" style="background: rgba(251,191,36,0.09); border-color: rgba(251,191,36,0.22); color: var(--gold);">Dashboard Development</span>
+              <span class="skill-pill" style="background: rgba(251,191,36,0.09); border-color: rgba(251,191,36,0.22); color: var(--gold);">KPI Reports</span>
+              <span class="skill-pill" style="background: rgba(251,191,36,0.09); border-color: rgba(251,191,36,0.22); color: var(--gold);">Power BI Visuals</span>
+              <span class="skill-pill" style="background: rgba(251,191,36,0.09); border-color: rgba(251,191,36,0.22); color: var(--gold);">Charts &amp; Graphs</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" style="transition-delay: 0.4s;">
+            <div class="card-header">
+              <span class="card-dot" style="background: var(--pink);"></span>
+              <div class="card-title">Core Strengths</div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill" style="background: rgba(244,114,182,0.09); border-color: rgba(244,114,182,0.22); color: var(--pink);">Analytical Thinking</span>
+              <span class="skill-pill" style="background: rgba(244,114,182,0.09); border-color: rgba(244,114,182,0.22); color: var(--pink);">Problem Solving</span>
+              <span class="skill-pill" style="background: rgba(244,114,182,0.09); border-color: rgba(244,114,182,0.22); color: var(--pink);">Communication</span>
+              <span class="skill-pill" style="background: rgba(244,114,182,0.09); border-color: rgba(244,114,182,0.22); color: var(--pink);">Team Coordination</span>
+              <span class="skill-pill" style="background: rgba(244,114,182,0.09); border-color: rgba(244,114,182,0.22); color: var(--pink);">Attention to Detail</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" style="transition-delay: 0.5s; border-color: rgba(108,99,255,0.30); background: rgba(108,99,255,0.05);">
+            <div class="card-header">
+              <span class="card-dot" style="background: var(--accent);"></span>
+              <div class="card-title">Currently Learning</div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.10); color: var(--text2);">Advanced SQL</span>
+              <span class="skill-pill" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.10); color: var(--text2);">Statistical Analysis</span>
+              <span class="skill-pill" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.10); color: var(--text2);">Data Storytelling</span>
+              <span class="skill-pill" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.10); color: var(--text2);">DAX</span>
+            </div>
+            <div class="skill-footer">Always growing 🚀</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-label reveal">WORK</div>
+        <h2 class="section-heading reveal">Featured Projects</h2>
+        <div class="skills-intro reveal">Projects that reflect my interest in data analysis, dashboard creation, and insight generation.</div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" style="transition-delay: 0s;">
+            <div class="project-num">01 · Sales Analysis</div>
+            <h3>Sales Performance Dashboard</h3>
+            <div class="project-desc">
+              Analyzed sales data to identify product performance, revenue trends, and region-wise insights. Built an
+              interactive dashboard to present key metrics in a clear, actionable format.
+            </div>
+            <div class="tool-badges">
+              <span class="tool-badge">Excel</span><span class="tool-badge">SQL</span><span class="tool-badge">Power BI</span>
+            </div>
+            <div class="project-highlights">
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Cleaned and structured raw sales data</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Created KPI-based visual reports</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Identified monthly and regional trends</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Designed an interactive dashboard</div>
+            </div>
+            <a class="project-github" href="https://github.com/Gifton07" target="_blank" rel="noopener noreferrer">
+              View on GitHub &rarr;
+            </a>
+          </article>
+
+          <article class="project-card reveal" style="transition-delay: 0.1s;">
+            <div class="project-num">02 · Customer Insights</div>
+            <h3>Customer Churn Analysis</h3>
+            <div class="project-desc">
+              Performed exploratory data analysis on customer data to study churn patterns and understand key factors
+              affecting customer retention and behavior across segments.
+            </div>
+            <div class="tool-badges">
+              <span class="tool-badge">Python</span><span class="tool-badge">Excel</span><span class="tool-badge">Power BI</span>
+            </div>
+            <div class="project-highlights">
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Handled missing and inconsistent data</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Analyzed churn across customer segments</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Visualized customer behavior trends</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Derived insights for retention improvement</div>
+            </div>
+            <a class="project-github" href="https://github.com/Gifton07" target="_blank" rel="noopener noreferrer">
+              View on GitHub &rarr;
+            </a>
+          </article>
+
+          <article class="project-card reveal" style="transition-delay: 0.2s;">
+            <div class="project-num">03 · HR Analytics</div>
+            <h3>HR Analytics Dashboard</h3>
+            <div class="project-desc">
+              Created a comprehensive HR dashboard to analyze attrition patterns, department distribution, and key
+              employee metrics for better workforce understanding.
+            </div>
+            <div class="tool-badges">
+              <span class="tool-badge">Excel</span><span class="tool-badge">Power BI</span>
+            </div>
+            <div class="project-highlights">
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Dashboard for employee analytics</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Attrition and department-level insights</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Clear visual representation of HR trends</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Workforce distribution overview</div>
+            </div>
+            <a class="project-github" href="https://github.com/Gifton07" target="_blank" rel="noopener noreferrer">
+              View on GitHub &rarr;
+            </a>
+          </article>
+
+          <article class="project-card reveal" style="transition-delay: 0.3s;">
+            <div class="project-num">04 · Education Analytics</div>
+            <h3>Student Performance Analysis</h3>
+            <div class="project-desc">
+              Analyzed student data to understand the relationship between attendance, study habits, and academic outcomes
+              through EDA and visualization.
+            </div>
+            <div class="tool-badges">
+              <span class="tool-badge">Python</span><span class="tool-badge">Pandas</span><span class="tool-badge">Matplotlib</span>
+            </div>
+            <div class="project-highlights">
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Data preprocessing and cleaning</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Trend and correlation analysis</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Visual report generation</div>
+              <div class="project-highlight"><span class="dot" aria-hidden="true"></span>Insight-based summary</div>
+            </div>
+            <a class="project-github" href="https://github.com/Gifton07" target="_blank" rel="noopener noreferrer">
+              View on GitHub &rarr;
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="leadership" class="section">
+        <div class="section-label reveal">BEYOND TECHNICAL</div>
+        <h2 class="section-heading reveal">Achievements &amp; Leadership</h2>
+        <div class="skills-intro reveal">
+          Active involvement in student communities helped me build leadership, coordination, and communication skills
+          alongside technical growth.
+        </div>
+
+        <div class="lead-grid">
+          <div class="role-list">
+            <div class="role-card reveal" style="transition-delay: 0s;">
+              <div class="role-icon" aria-hidden="true">
+                <img
+                  class="role-logo role-logo--mulearn"
+                  src="https://mulearn.org/_next/image?url=%2Fassets%2Flogo.png&w=96&q=75"
+                  alt="µLearn logo"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <div class="role-title" style="cursor: pointer;" onclick="window.location.href='https://mulearn.org/team'">Associate - Campus Management</div>
+                <div class="role-org">
+                  <a class="org-link" href="https://mulearn.org/team" target="_blank" rel="noopener noreferrer">µLearn</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card reveal" style="transition-delay: 0.1s;">
+              <div class="role-icon" aria-hidden="true">
+                <img
+                  class="role-logo"
+                  src="https://ieee-edusociety.org/files/ieeeedusociety/ieee-edsoc-color-logo-forweb.png"
+                  alt="IEEE EdSoc logo"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <div class="role-title">Intern</div>
+                <div class="role-org">
+                  <a class="org-link" href="https://ieee-edusociety.org/" target="_blank" rel="noopener noreferrer">IEEE EdSoc</a> · Student Branch
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card reveal" style="transition-delay: 0.2s;">
+              <div class="role-icon" aria-hidden="true">
+                <img
+                  class="role-logo role-logo--mulearn"
+                  src="https://mulearn.org/_next/image?url=%2Fassets%2Flogo.png&w=96&q=75"
+                  alt="µLearn logo"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <div class="role-title">Ernakulam District Lead</div>
+                <div class="role-org">
+                  <a class="org-link" href="https://mulearn.org/team" target="_blank" rel="noopener noreferrer">µLearn</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card reveal" style="transition-delay: 0.3s;">
+              <div class="role-icon" aria-hidden="true">
+                <img
+                  class="role-logo role-logo--mulearn"
+                  src="https://mulearn.org/_next/image?url=%2Fassets%2Flogo.png&w=96&q=75"
+                  alt="µLearn logo"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <div class="role-title">Campus Lead</div>
+                <div class="role-org">
+                  <a class="org-link" href="https://mulearn.org/team" target="_blank" rel="noopener noreferrer">µLearn</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card reveal" style="transition-delay: 0.4s;">
+              <div class="role-icon" aria-hidden="true">
+                <img
+                  class="role-logo"
+                  src="https://brand-experience.ieee.org/download/ieee-mb-blue-png-2/?wpdmdl=4855"
+                  alt="IEEE logo"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <div class="role-title">Content Lead</div>
+                <div class="role-org">IEEE SB SNGCE</div>
+              </div>
+            </div>
+
+            <div class="role-card reveal" style="transition-delay: 0.5s;">
+              <div class="role-icon" aria-hidden="true">
+                <img
+                  class="role-logo"
+                  src="https://brand-experience.ieee.org/download/ieee-mb-blue-png-2/?wpdmdl=4855"
+                  alt="IEEE logo"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <div class="role-title">Treasurer</div>
+                <div class="role-org">IEEE SB SNCGE</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lead-right">
+            <p class="reveal">
+              These roles allowed me to work closely with student communities, campus initiatives, and leadership
+              activities. Through these experiences, I strengthened my ability to manage responsibilities, coordinate
+              with teams, lead initiatives, and contribute to community development.
+            </p>
+
+            <div class="lead-pills reveal">
+              <span class="lead-pill">Leadership</span>
+              <span class="lead-pill">Team Coordination</span>
+              <span class="lead-pill">Event Management</span>
+              <span class="lead-pill">Community Building</span>
+              <span class="lead-pill">Communication</span>
+            </div>
+
+            <div class="key-points reveal">
+              <div class="key-point"><span class="arrow">→</span><span>Led student communities beyond campus level</span></div>
+              <div class="key-point"><span class="arrow">→</span><span>Managed teams and coordinated initiatives</span></div>
+              <div class="key-point"><span class="arrow">→</span><span>Consistent contributor to community growth</span></div>
+              <div class="key-point"><span class="arrow">→</span><span>Communication across diverse student groups</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="section-label reveal">CREDENTIALS</div>
+        <h2 class="section-heading reveal">Certifications</h2>
+        <div class="skills-intro reveal">
+          Continuously improving technical and analytical knowledge through structured learning programs.
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal" style="transition-delay: 0s;">
+            <div class="cert-top" style="background: rgba(108,99,255,0.12);">
+              <div class="cert-icon" aria-hidden="true">📊</div>
+            </div>
+            <div class="cert-bottom">
+              <div class="cert-name">Data Analytics Certification</div>
+              <div class="cert-platform"><!-- Replace with actual platform --></div>
+              <span class="verified">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" style="transition-delay: 0.1s;">
+            <div class="cert-top" style="background: rgba(52,211,153,0.10);">
+              <div class="cert-icon" aria-hidden="true">📗</div>
+            </div>
+            <div class="cert-bottom">
+              <div class="cert-name">Excel for Data Analysis</div>
+              <div class="cert-platform"><!-- Replace with actual platform --></div>
+              <span class="verified">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" style="transition-delay: 0.2s;">
+            <div class="cert-top" style="background: rgba(56,189,248,0.10);">
+              <div class="cert-icon" aria-hidden="true">🗄️</div>
+            </div>
+            <div class="cert-bottom">
+              <div class="cert-name">SQL Certification</div>
+              <div class="cert-platform"><!-- Replace with actual platform --></div>
+              <span class="verified">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" style="transition-delay: 0.3s;">
+            <div class="cert-top" style="background: rgba(251,191,36,0.10);">
+              <div class="cert-icon" aria-hidden="true">📈</div>
+            </div>
+            <div class="cert-bottom">
+              <div class="cert-name">Power BI Certification</div>
+              <div class="cert-platform"><!-- Replace with actual platform --></div>
+              <span class="verified">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" style="transition-delay: 0.4s;">
+            <div class="cert-top" style="background: rgba(244,114,182,0.10);">
+              <div class="cert-icon" aria-hidden="true">🐍</div>
+            </div>
+            <div class="cert-bottom">
+              <div class="cert-name">Python for Data Analysis</div>
+              <div class="cert-platform"><!-- Replace with actual platform --></div>
+              <span class="verified">Verified</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div id="resume-banner">
+        <div class="resume-inner reveal">
+          <div class="resume-left">
+            <div class="resume-label">RESUME</div>
+            <h3>See My Full Profile</h3>
+            <p>A complete overview of my education, technical skills, projects, certifications, and leadership experience.</p>
+          </div>
+          <div class="resume-right">
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact" class="section">
+        <div class="section-label reveal">LET'S CONNECT</div>
+        <h2 class="section-heading reveal">Contact Me</h2>
+        <div class="contact-intro reveal">
+          Open to internships, entry-level roles, and collaborations in data analytics. Feel free to reach out.
+        </div>
+
+        <div class="contact-cards">
+          <a
+            class="contact-card reveal"
+            style="transition-delay: 0s;"
+            href="https://www.linkedin.com/in/gifton07"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon" style="background: rgba(10,102,194,0.15);">
+              <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.046c.477-.9 1.637-1.852 3.37-1.852 3.602 0 4.266 2.371 4.266 5.455v6.288ZM5.337 7.433c-1.144 0-2.063-.926-2.063-2.063 0-1.137.92-2.063 2.063-2.063 1.143 0 2.064.926 2.064 2.063 0 1.137-.921 2.063-2.064 2.063ZM6.77 20.452H3.902V9H6.77v11.452Z"
+                />
+              </svg>
+            </span>
+            <span class="contact-meta">
+              <span class="contact-value">LinkedIn</span>
+            </span>
+          </a>
+
+          <a
+            class="contact-card reveal"
+            style="transition-delay: 0.08s;"
+            href="https://github.com/Gifton07"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon" style="background: rgba(255,255,255,0.08);">
+              <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.18 6.84 9.52.5.09.68-.22.68-.48 0-.24-.01-.86-.01-1.64-2.77.6-3.35-1.35-3.35-1.35-.45-1.14-1.08-1.44-1.08-1.44-.88-.6.07-.59.07-.59 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.33 1.09 2.9.83.09-.65.35-1.09.63-1.34-2.21-.25-4.54-1.11-4.54-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.33 4.7-4.55 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10Z"
+                />
+              </svg>
+            </span>
+            <span class="contact-meta">
+              <span class="contact-value">GitHub</span>
+            </span>
+          </a>
+
+          <a
+            class="contact-card reveal"
+            style="transition-delay: 0.16s;"
+            href="mailto:giftonshibu07@gmail.com"
+          >
+            <span class="contact-icon" style="background: rgba(108,99,255,0.15);">
+              <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"
+                />
+              </svg>
+            </span>
+            <span class="contact-meta">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">giftonshibu07@gmail.com</span>
+            </span>
+          </a>
+
+          <a
+            class="contact-card reveal"
+            style="transition-delay: 0.24s;"
+            href="tel:+919633051958"
+          >
+            <span class="contact-icon" style="background: rgba(52,211,153,0.12);">
+              <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M6.62 10.79c1.44 2.83 3.75 5.14 6.58 6.58l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.07 21 3 13.93 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.46.57 3.59.11.34.03.73-.25 1.01l-2.2 2.19Z"
+                />
+              </svg>
+            </span>
+            <span class="contact-meta">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 9633051958</span>
+            </span>
+          </a>
+
+          <div class="contact-card reveal" style="transition-delay: 0.32s;">
+            <span class="contact-icon" style="background: rgba(251,191,36,0.10);">
+              <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M12 2c-3.31 0-6 2.69-6 6 0 4.5 6 14 6 14s6-9.5 6-14c0-3.31-2.69-6-6-6Zm0 9c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3Z"
+                />
+              </svg>
+            </span>
+            <span class="contact-meta">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Kerala, India</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-cta reveal">
+          <h3>Open to Opportunities</h3>
+          <p>Whether it's an internship, fresher role, or a data project collaboration &mdash; I'd love to hear from you.</p>
+          <a class="btn-main" href="mailto:giftonshibu07@gmail.com">Send me an Email &rarr;</a>
+        </div>
+      </section>
+    </main>
+
+    <footer aria-label="Footer">
+      <div class="footer-top">
+        <div>
+          <div class="footer-title">Gifton Shibu</div>
+          <div class="footer-sub">Aspiring Data Analyst · Turning data into meaningful insights.</div>
+        </div>
+
+        <div class="footer-links" aria-label="Footer links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.linkedin.com/in/gifton07" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Gifton07" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 Gifton Shibu. All Rights Reserved.</div>
+    </footer>
+
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+
+    <script>
+      (function () {
+        const body = document.body;
+
+        // Loading screen behavior
+        const loadingScreen = document.getElementById("loading-screen");
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        function setBodyOverflow(hidden) {
+          body.style.overflow = hidden ? "hidden" : "";
+        }
+
+        // Prevent user scroll while loading
+        setBodyOverflow(true);
+
+        const heroSubtextEl = document.getElementById("hero-subtext");
+        const typedAnimEl = document.getElementById("typing-anim");
+        const typedTextEl = document.getElementById("typed-text");
+        const heroPhotoAnim = document.getElementById("hero-photo-anim");
+
+        const phrases = [
+          "Aspiring Data Analyst",
+          "Dashboard Builder",
+          "Insight Explorer",
+          "Excel · SQL · Python · Power BI"
+        ];
+
+        const typing = {
+          typeSpeed: 80, // ms/char
+          pause: 1800, // ms
+          deleteSpeed: 40 // ms/char
+        };
+
+        function startTyping() {
+          let phraseIndex = 0;
+          let charIndex = 0;
+          let isDeleting = false;
+
+          function tick() {
+            const current = phrases[phraseIndex];
+            if (!isDeleting) {
+              charIndex++;
+              typedTextEl.textContent = current.slice(0, charIndex);
+
+              if (charIndex >= current.length) {
+                isDeleting = true;
+                setTimeout(tick, typing.pause);
+                return;
+              }
+              setTimeout(tick, typing.typeSpeed);
+            } else {
+              charIndex--;
+              typedTextEl.textContent = current.slice(0, charIndex);
+              if (charIndex <= 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(tick, typing.typeSpeed);
+                return;
+              }
+              setTimeout(tick, typing.deleteSpeed);
+            }
+          }
+
+          tick();
+        }
+
+        function buildHeroSubtext() {
+          const full =
+            "Transforming raw data into clear, meaningful insights through analysis, visualization, and structured problem-solving.";
+          const words = full.split(" ");
+          heroSubtextEl.innerHTML = "";
+          words.forEach((w, idx) => {
+            const span = document.createElement("span");
+            span.className = "hero-subtext-word";
+            span.textContent = w;
+            heroSubtextEl.appendChild(span);
+            if (idx !== words.length - 1) heroSubtextEl.appendChild(document.createTextNode(" "));
+          });
+        }
+
+        function revealHeroSubtext() {
+          const words = heroSubtextEl.querySelectorAll(".hero-subtext-word");
+          words.forEach((span, i) => {
+            setTimeout(() => span.classList.add("show"), 55 * i);
+          });
+        }
+
+        // Apply load staggered animations
+        function runInitialStaggers() {
+          // Nav slide down from translateY(-100%), 0.5s ease, delay 0ms
+          const navbar = document.getElementById("navbar");
+          navbar.classList.add("nav-show");
+
+          const isPhone = window.matchMedia && window.matchMedia("(max-width: 600px)").matches;
+          const isShort = window.matchMedia && window.matchMedia("(max-height: 700px) and (max-width: 900px)").matches;
+          const photoFirst = isPhone || isShort;
+
+          // Run fadeUp elements with data-anim-delay (hero-only)
+          document.querySelectorAll("[data-anim-delay]").forEach((el) => {
+            const delay = Number(el.getAttribute("data-anim-delay")) || 0;
+            el.style.animationDelay = delay + "ms";
+            // Ensure animation starts by reflow:
+            // eslint-disable-next-line no-unused-expressions
+            el.offsetHeight;
+            el.classList.add("run-fadeUp");
+          });
+
+          // Hero photo: scale 0.88 -> 1.0 + fade
+          // On phone/short screens: show photo first (before the h1 stagger).
+          const photoDelay = photoFirst ? 0 : 800;
+          setTimeout(() => heroPhotoAnim.classList.add("show"), photoDelay);
+
+          // Typing line starts after delay
+          const typingDelay = photoFirst ? 1200 : 900;
+          setTimeout(() => {
+            typedAnimEl.classList.add("show");
+            startTyping();
+          }, typingDelay);
+
+          // Hero subtext word-by-word reveal
+          const subtextDelay = photoFirst ? 1350 : 1100;
+          setTimeout(revealHeroSubtext, subtextDelay);
+
+          // Buttons & tags fadeUp delays handled by data-anim-delay above
+        }
+
+        // Smooth parallax using rAF
+        function setupParallax() {
+          const parallaxBlobsWrap = document.querySelector(".hero-blobs .blob-wrap");
+          const photoParallax = document.getElementById("hero-photo-parallax");
+          let latestScrollY = 0;
+          let rafId = null;
+
+          function animate() {
+            if (!rafId) rafId = requestAnimationFrame(() => {
+              const y = latestScrollY;
+              if (parallaxBlobsWrap) {
+                parallaxBlobsWrap.style.transform = "translateY(" + y * 0.25 + "px)";
+              }
+              if (photoParallax) {
+                photoParallax.style.transform = "translateY(" + y * 0.08 + "px)";
+              }
+              rafId = null;
+              animate();
+            });
+          }
+
+          function onScroll() {
+            latestScrollY = window.scrollY || 0;
+          }
+
+          window.addEventListener("scroll", onScroll, { passive: true });
+          animate();
+        }
+
+        // Scroll reveal (IntersectionObserver)
+        function setupScrollReveal() {
+          const revealEls = Array.from(document.querySelectorAll(".reveal"));
+          if (!revealEls.length) return;
+
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting) {
+                  e.target.classList.add("show");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 }
+          );
+
+          revealEls.forEach((el) => io.observe(el));
+        }
+
+        // Counter animation (requestAnimationFrame + easeOutQuad)
+        function setupCounters() {
+          const counters = Array.from(document.querySelectorAll(".counter"));
+          if (!counters.length) return;
+
+          let ran = false;
+
+          const easeOutQuad = (t) => t * (2 - t);
+
+          function animateCounter(counterEl) {
+            const from = Number(counterEl.getAttribute("data-from")) || 0;
+            const to = Number(counterEl.getAttribute("data-to")) || 0;
+            const duration = Number(counterEl.getAttribute("data-duration")) || 1000;
+            const suffix = counterEl.getAttribute("data-suffix") || "";
+
+            const start = performance.now();
+
+            function step(now) {
+              const elapsed = now - start;
+              const t = Math.min(1, elapsed / duration);
+              const eased = easeOutQuad(t);
+              const val = from + (to - from) * eased;
+              const display = Math.round(val);
+              counterEl.textContent = String(display) + suffix;
+              if (t < 1) requestAnimationFrame(step);
+            }
+
+            requestAnimationFrame(step);
+          }
+
+          // Trigger once on first scroll into view
+          const statsSection = document.querySelector("#about .stats-grid");
+          if (!statsSection) return;
+
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting && !ran) {
+                  ran = true;
+                  counters.forEach((c) => animateCounter(c));
+                  io.disconnect();
+                }
+              });
+            },
+            { threshold: 0.25 }
+          );
+
+          io.observe(statsSection);
+        }
+
+        // Skills pill stagger reveal on viewport entry
+        function setupSkillsChips() {
+          const skillsSection = document.getElementById("skills");
+          if (!skillsSection) return;
+
+          const pills = Array.from(skillsSection.querySelectorAll(".skill-pill"));
+          if (!pills.length) return;
+
+          let ran = false;
+
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting && !ran) {
+                  ran = true;
+                  // Apply stagger delay: nth-child -> n * 0.05s
+                  pills.forEach((p, idx) => {
+                    p.style.transitionDelay = idx * 0.05 + "s";
+                  });
+                  skillsSection.classList.add("skills-revealed");
+                  io.disconnect();
+                }
+              });
+            },
+            { threshold: 0.25 }
+          );
+
+          io.observe(skillsSection);
+        }
+
+        // Active nav highlight (IntersectionObserver per section)
+        function setupActiveNav() {
+          const sections = ["about", "skills", "projects", "leadership", "certifications", "contact"];
+          const links = Array.from(document.querySelectorAll(".nav-link"));
+          const map = new Map();
+          links.forEach((a) => map.set(a.getAttribute("data-section"), a));
+
+          const io = new IntersectionObserver(
+            (entries) => {
+              let activeId = null;
+              entries.forEach((e) => {
+                if (e.isIntersecting) activeId = e.target.id;
+              });
+              if (!activeId) return;
+              links.forEach((l) => l.classList.remove("active"));
+              const link = map.get(activeId);
+              if (link) link.classList.add("active");
+            },
+            { threshold: 0.5 }
+          );
+
+          sections.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) io.observe(el);
+          });
+        }
+
+        // Nav scroll state
+        function setupNavScrollState() {
+          const navbar = document.getElementById("navbar");
+          function onScroll() {
+            const y = window.scrollY || 0;
+            if (y > 50) navbar.classList.add("scrolled");
+            else navbar.classList.remove("scrolled");
+          }
+          onScroll();
+          window.addEventListener("scroll", onScroll, { passive: true });
+        }
+
+        // Mobile menu toggle
+        function setupMobileMenu() {
+          function setOpen(open) {
+            mobileMenu.classList.toggle("open", open);
+            hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+            mobileMenu.hidden = !open;
+          }
+
+          hamburger.addEventListener("click", () => {
+            const open = !mobileMenu.classList.contains("open");
+            setOpen(open);
+          });
+
+          mobileMenu.querySelectorAll("a").forEach((a) => {
+            a.addEventListener("click", () => setOpen(false));
+          });
+        }
+
+        // Custom cursor
+        function setupCursor() {
+          const isCoarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+          if (isCoarse) return;
+
+          const dot = document.getElementById("cursor-dot");
+          const ring = document.getElementById("cursor-ring");
+          if (!dot || !ring) return;
+
+          let mouseX = window.innerWidth / 2;
+          let mouseY = window.innerHeight / 2;
+          let ringX = mouseX;
+          let ringY = mouseY;
+
+          let rafRunning = false;
+
+          function setDot(x, y) {
+            dot.style.left = x + "px";
+            dot.style.top = y + "px";
+          }
+
+          function setRing(x, y) {
+            ring.style.left = x + "px";
+            ring.style.top = y + "px";
+          }
+
+          // Initialize positions to avoid jump
+          setDot(mouseX, mouseY);
+          setRing(ringX, ringY);
+
+          function onMove(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            setDot(mouseX, mouseY);
+            if (!rafRunning) {
+              rafRunning = true;
+              requestAnimationFrame(animateRing);
+            }
+          }
+
+          function animateRing() {
+            ringX += (mouseX - ringX) * 0.12;
+            ringY += (mouseY - ringY) * 0.12;
+            setRing(ringX, ringY);
+            requestAnimationFrame(animateRing);
+          }
+
+          document.addEventListener("mousemove", onMove, { passive: true });
+
+          // Cursor hover on links/buttons
+          let hovering = false;
+          const hoverTargets = document.querySelectorAll("a, button");
+
+          function onOver(e) {
+            const t = e.target.closest("a, button");
+            if (!t) return;
+            hovering = true;
+            body.classList.add("cursor-hover");
+          }
+
+          function onOut(e) {
+            const related = e.relatedTarget;
+            if (related && related.closest && related.closest("a, button")) return;
+            hovering = false;
+            body.classList.remove("cursor-hover");
+          }
+
+          hoverTargets.forEach((el) => {
+            el.addEventListener("mouseenter", onOver);
+            el.addEventListener("mouseleave", onOut);
+          });
+        }
+
+        // Start loading flow
+        function start() {
+          buildHeroSubtext();
+
+          const fadeAfterMs = 1500;
+          const fadeOutExtraMs = 500;
+
+          setTimeout(() => {
+            loadingScreen.classList.add("is-fading");
+            // After 1.5s, overlay begins fade out and then we run initial stagger sequence
+            runInitialStaggers();
+          }, fadeAfterMs);
+
+          setTimeout(() => {
+            loadingScreen.style.display = "none";
+            setBodyOverflow(false);
+          }, fadeAfterMs + fadeOutExtraMs);
+        }
+
+        // Boot up
+        hamburger && setupMobileMenu();
+        setupScrollReveal();
+        setupCounters();
+        setupSkillsChips();
+        setupActiveNav();
+        setupNavScrollState();
+        setupParallax();
+        setupCursor();
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", start);
+        } else {
+          start();
+        }
+      })();
+    </script>
+  </body>
+</html>
+
