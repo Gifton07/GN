@@ -1618,12 +1618,8 @@
           order: 0;
         }
 
-        .hero-left-top {
+        .hero-left {
           order: 1;
-        }
-
-        .hero-left-bottom {
-          order: 2;
         }
 
         .hero-photo-anim {
@@ -1650,13 +1646,8 @@
         .hero-right {
           order: 0;
         }
-
-        .hero-left-top {
+        .hero-left {
           order: 1;
-        }
-
-        .hero-left-bottom {
-          order: 2;
         }
 
         .hero-title {
