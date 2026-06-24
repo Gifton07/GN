@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gifton Shibu | Data Analyst Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Syne:wght@700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -44,6 +42,9 @@
         </button>
 
         <a class="nav-cta" href="mailto:giftonshibu07@gmail.com">Get in Touch</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme">
+          <!-- icon replaced by script -->
+        </button>
 
         <div class="mobile-menu" id="mobile-menu" hidden>
           <a href="#about" data-mobile-section="about">About</a>
@@ -147,7 +148,7 @@
           <div class="hero-right">
             <div class="hero-photo-parallax" id="hero-photo-parallax">
               <div class="hero-photo-anim" id="hero-photo-anim">
-                <img class="main-photo" src="gifton.jpeg" alt="Gifton Shibu" />
+                <img class="main-photo" src="gifton.png" alt="Gifton Shibu" />
               </div>
             </div>
           </div>
@@ -1158,6 +1159,42 @@
         }
       })();
     </script>
+      <script>
+        (function () {
+          try {
+            const saved = localStorage.getItem('theme');
+            const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+            const theme = saved || (prefersLight ? 'light' : 'dark');
+            document.documentElement.setAttribute('data-theme', theme);
+            // Setup theme toggle button icon and behavior
+            const toggle = document.getElementById('theme-toggle');
+            const icons = {
+              light: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79L3.17 4.83l1.79 1.79 1.8-1.78zM1 13h3v-2H1v2zm10-9h2V1h-2v3zm7.03 2.05l1.79-1.79-1.79-1.78-1.79 1.79 1.79 1.78zM17.24 19.16l1.79 1.79 1.79-1.79-1.79-1.79-1.79 1.79zM20 11v2h3v-2h-3zM12 6a6 6 0 100 12 6 6 0 000-12z"/></svg>',
+              dark: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.64 13.05A9 9 0 1110.95 2.36 7 7 0 0021.64 13.05z"/></svg>'
+            };
+
+            function updateToggle(theme) {
+              if (!toggle) return;
+              toggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+              toggle.innerHTML = theme === 'light' ? icons.dark : icons.light; // show opposite to indicate action
+            }
+
+            updateToggle(theme);
+
+            if (toggle) {
+              toggle.addEventListener('click', function () {
+                const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+                const next = current === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                updateToggle(next);
+              });
+            }
+          } catch (e) {
+            /* ignore */
+          }
+        })();
+      </script>
   </body>
 </html>
 
